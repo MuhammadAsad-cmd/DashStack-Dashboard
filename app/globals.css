@@ -2,32 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #f5f6fa;
+  font-weight: 500;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+
+.setting-linear {
+  background: rgb(86, 78, 213);
+  background: linear-gradient(
+    319deg,
+    rgba(86, 78, 213, 1) 0%,
+    rgba(34, 34, 228, 1) 38%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.calender-linear {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    22deg,
+    rgba(255, 255, 255, 1) 1%,
+    rgba(246, 29, 219, 1) 67%
+  );
+}
+
+.profile-linear {
+  background: rgb(93, 103, 223);
+  background: linear-gradient(
+    210deg,
+    rgba(93, 103, 223, 1) 46%,
+    rgba(22, 52, 213, 1) 63%,
+    rgba(20, 47, 215, 1) 81%,
+    rgba(44, 100, 195, 1) 98%
+  );
+}
+
+.application-linear {
+  background: rgb(210,100,100);
+  background: linear-gradient(210deg, rgba(210,100,100,1) 38%, rgba(231,11,22,1) 94%, rgba(44,100,195,1) 98%);
+}
+
+.team-background{
+  background-image: url("/images/TeamBackground.png");
+}
+
+.text-ellipsis {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
 }
