@@ -5,7 +5,6 @@ import Sidebar from "./components/Sidebar/page";
 import Navbar from "./components/Navbar/page";
 import { selectTheme } from "./redux/slices/darkModeSlice ";
 import Sidebartwo from "./components/Sidebar2/page";
-import Memo from "./components/Memo";
 
 const Home = () => {
   const [selectedItem, setSelectedItem] = useState("Dashboard");
@@ -81,7 +80,6 @@ const Home = () => {
           sidebar2Open={sidebar2Open}
         />
       </div>
-      <Memo/>
     </>
   );
 };
